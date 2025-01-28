@@ -1,8 +1,5 @@
 import json
 
-with open('base_clientes.json', 'r') as archivo:
-    base_de_datos = json.load(archivo)
-
 def menu():
  while True:
   print("\nMENU")
@@ -28,6 +25,9 @@ def contiene_numero(contrasenia):
 
 def iniciar_sesion(): #opcion 1
   print("\n INICIAR SESIÓN - ingrese 0 para retornar \n")
+  with open('base_clientes.json', 'r') as archivo:
+    base_de_datos = json.load(archivo)
+  archivo.close()
   # ingresar usuario
   while True:
     usuario=input("Usuario: ")
@@ -54,6 +54,8 @@ def iniciar_sesion(): #opcion 1
 
 def registrar_usuario():
   print("\n REGISTRAR USUARIO - ingrese 0 para retornar \n")
+  with open('base_clientes.json', 'r') as archivo:
+    base_de_datos = json.load(archivo) 
   # Nuevo usuario
   while True:
     nuevo_usuario=input("Nuevo usuario: ")
@@ -86,12 +88,16 @@ def registrar_usuario():
     else:
       break
   base_de_datos[nuevo_usuario] = nueva_contrasenia
+  with open('base_clientes.json', 'w') as archivo:
+    json.dump(base_de_datos, archivo)
   print("Usuario "+ nuevo_usuario +" registrado exitosamente! \n")
 
 def buscar_usuario():
+  with open('base_clientes.json', 'r') as archivo:
+    base_de_datos = json.load(archivo)  
   while True:
     print("\nBÚSQUEDA DE USUARIO")
-    print("1. Buscar un usuario en la base de dator")
+    print("1. Buscar un usuario en la base de datos")
     print("2. Salir")
     try:
       opcion = int(input("Elegir una opción: "))
