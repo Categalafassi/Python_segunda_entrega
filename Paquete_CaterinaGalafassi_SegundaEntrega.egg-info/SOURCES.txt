@@ -1,0 +1,8 @@
+setup.py
+CaterinaGalafassi_SegundaEntrega/Clase_cliente.py
+CaterinaGalafassi_SegundaEntrega/Main.py
+CaterinaGalafassi_SegundaEntrega/__init__.py
+Paquete_CaterinaGalafassi_SegundaEntrega.egg-info/PKG-INFO
+Paquete_CaterinaGalafassi_SegundaEntrega.egg-info/SOURCES.txt
+Paquete_CaterinaGalafassi_SegundaEntrega.egg-info/dependency_links.txt
+Paquete_CaterinaGalafassi_SegundaEntrega.egg-info/top_level.txt
