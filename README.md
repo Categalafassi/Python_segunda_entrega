@@ -16,10 +16,10 @@ Ejecutar correctamente el uso de paquetes y librerías.
 - Generación de paquete redistribuible
 
 ### Recomendaciones
-La Clase Cliente debe tener mínimo 4 atributos (nombre_de_usuario, contraseña, email, dni),
+La Clase Cliente debe tener mínimo 4 atributos (nombre, apellido, nombre_de_usuario, contraseña, email),
 Se debe utilizar el método init, para definir uno o más de los atributos del punto anterior
 Se debe utilizar el método str() para darle nombre a los objetos.
-Aparte, genera 2 métodos por fuera de los magic methods ()
+Aparte, genera 2 métodos por fuera de los magic methods (actualizar_datos, cambiar contraseña)
 Para crear el paquete distribuible también como adicional el archivo de la Pre entrega #1.
 
 ## Formato
